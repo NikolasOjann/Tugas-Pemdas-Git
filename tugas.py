@@ -42,19 +42,19 @@ data_panen = {
 }
 
 
-# 1
+# 1Tampilkan seluruh data dari data_panen termasuk nama lokasi dan hasil panen masing-masing.
 print(f"Seluruh data panen")
 print(data_panen)
 
-# 2
+# 2 Tampilkan jumlah hasil panen jagung dari lokasi2.
 hasil_panen_lokasi2 = data_panen["lokasi2"]["hasil_panen"]["jagung"] 
 print(f"Hasil panen jagung Lokasi2: {hasil_panen_lokasi2}")
 
-# 3
+# 3 Tampilkan nama lokasi dari lokasi3.
 Nama_lokasi = data_panen["lokasi3"]["nama_lokasi"]
 print(f"Nama Lokasi3 adalah:{Nama_lokasi}")
 
-# 4
+# 4 Masukkan Jumlah Hasil Panen Padi dan Kedelai Setiap Lokasi ke Dalam Variabel yang Berbeda:
 hasil_panen_padi = []
 hasil_panen_kedelai = []
 
@@ -68,7 +68,7 @@ for lokasi in data_panen:
 print("Hasil panen padi semua lokasi",hasil_panen_padi)
 print("Hasil panen kedelai semua lokasi",hasil_panen_kedelai)
 
-# 5
+# 5 Buat variabel terpisah untuk menyimpan jumlah hasil panen padi dan kedelai dari setiap lokasi.
 padi_di_lokasi1 = data_panen['lokasi1']['hasil_panen']['padi']
 kedelai_di_lokasi1 = data_panen['lokasi1']['hasil_panen']['kedelai']
 
@@ -101,7 +101,8 @@ print("Kebun E:", kedelai_di_lokasi5, "kg")
 
 
 
-# 6
+# 6 Buat PercabanganJika jumlah hasil panen padi lebih dari 1300 atau jagung lebih dari 800 di suatu lokasi, maka lokasi tersebut memerlukan perhatian khusus.Jika tidak, maka lokasi tersebut dalam kondisi baik.
+
 for A in data_panen:
     nama_lokasi = data_panen[A]['nama_lokasi']
     padi = data_panen[A]['hasil_panen']['padi']
